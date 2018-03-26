@@ -6596,7 +6596,7 @@ window.adobe.target.___bootstrap(window, document, {
   "crossDomain": "disabled",
   "timeout": 20000,
   "globalMboxName": "target-global-mbox",
-  "globalMboxAutoCreate": true,
+  "globalMboxAutoCreate": false,
   "version": "1.0.0",
   "defaultContentHiddenStyle": "visibility: hidden;",
   "defaultContentVisibleStyle": "visibility: visible;",
