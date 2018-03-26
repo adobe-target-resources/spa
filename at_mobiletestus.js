@@ -3,6 +3,14 @@
  * at.js 1.3.0 | (c) Adobe Systems Incorporated | All rights reserved
  * zepto.js | (c) 2010-2016 Thomas Fuchs | zeptojs.com/license
 */
+_AT = window._AT || {
+	config: {
+		atServer: 'adobe-target-resources.github.io',
+		atLocation: '/spa/cdn',
+		checkAllowedOrigin: false
+	}
+};
+
 (function (exports) {
 'use strict';
 
@@ -6596,7 +6604,7 @@ window.adobe.target.___bootstrap(window, document, {
   "crossDomain": "disabled",
   "timeout": 20000,
   "globalMboxName": "target-global-mbox",
-  "globalMboxAutoCreate": false,
+  "globalMboxAutoCreate": true,
   "version": "1.0.0",
   "defaultContentHiddenStyle": "visibility: hidden;",
   "defaultContentVisibleStyle": "visibility: visible;",
@@ -6611,7 +6619,7 @@ window.adobe.target.___bootstrap(window, document, {
   "optoutEnabled": false,
   "secureOnly": false,
   "supplementalDataIdParamTimeout": 30,
-  "authoringScriptUrl": "//cdn.tt.omtrdc.net/cdn/target-vec.js",
+  "authoringScriptUrl": "//adobe-target-resources.github.io/spa/cdn/target-vec.js",
   "requestMethod": "POST",
   "endpoint": "/rest/v1alpha1/delivery"
 }
